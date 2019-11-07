@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Exo CSS 9</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-  </head>
-  <body>
-      <div class="rectanglebleu">
-        <form>
-          <p>Votre identité</p>
+<head>
+  <meta charset="utf-8"/>
+  <title>Exo CSS 9</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <form>
+      <!--Cette partie concerne la premiere partie identité du formulaire-->
+      <fieldset id="identityInfo">
+      <legend id="identity">Votre identité</legend>
+      <ol>
+        <li>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" placeholder="Nom"/>
+        </li>
+        <li>
+          <label for="firstname">Prenom :</label>
+          <input type="text" id="firstname" name="firstname"placeholder="Prénom"/>
+          </li>
+          <li>
+            <label for="mail">Adresse mail :</label>
+            <input type="text" id="mail" name="mail" placeholder="Adresse mail"/>
+          </li>
+        </ol>
+      </fieldset>
+      <!--Cette partie concerne la seconde section partie livraison du formulaire-->
+        <fieldset id="adInfo">
+        <legend id="infolivraison">Nom de livraison</legend>
+        <ol>
+          <li>
+            <label for="adresse">Adresse :</label>
+            <textarea name="adresse" rows="8" cols="80"></textarea>
+          </li>
+          <li>
+            <label for="postal">Code postal:</label>
+            <input type="text" id="mail" name="mail" placeholder="Code postal"/>
+          </li>
+          <li>
+            <label for="country">Ville</label>
+            <input type="text" id="Ville" name="Ville" placeholder="Ville"/>
+          </ol>
+        </fieldset>
+        <!--Cette partie concerne la troisieme partie information reglements du formulaire-->
+          <fieldset id="paiementInfo">
+          <legend id="livraison">Information de réglement</legend>
           <ol>
+            <li>Type de carte bancaire :</li>
+              <div id="VISA">
+                <input type="radio" id="Ville" name="Ville" placeholder="Visa"/>
+                <label for="country">VISA</label>
+              </div>
+              <div id="Mastercard">
+                <input type="radio" id="Ville" name="Ville" placeholder="Mastercard"/>
+                <label for="country">Mastercard</label>
+              </div>
+              </li>
+            </ul>
             <li>
-              <label for="name">Nom :</label>
-              <input type="text" id="name" name="name">
+            <label for="country">Numéro de carte:</label>
+            <input type="text" id="Ville" name="Ville" placeholder="Numéro de carte"/>
             </li>
             <li>
-              <label for="firstname">Prenom :</label>
-              <input type="text" id="firstname" name="firstname">
+            <label for="country">Code de sécurité:</label>
+            <input type="text" id="Ville" name="Ville" placeholder="Code sécurité"/>
+            </li>
             <li>
-              <label for="mail">Adresse email :</label>
-              <input type="email" id="mail" name="mail">
+            <label for="country">Nom du titulaire:</label>
+            <input type="text" id="Ville" name="Ville" placeholder="Nom du titulaire"/>
             </li>
           </ol>
+          </fieldset>
+                <!--Cette partie concerne la partie après les segments-->
+            <input type="button" value="J'achète !"/>
         </form>
-      </div>
-      <div class="rectangleviolet">
-        <form>
-          <p>Adresse de livraison</p>
-          <ol>
-            <li>
-              <label for="name">Adresse :</label>
-              <textarea name="adresse" rows="8" cols="80"></textarea>
-            </li>
-            <li>
-              <label for="name">Code postal:</label>
-              </li>
-            </ol>
-        </form>
-      </div>
-      <div class="rectanglerose"></div>
-  </body>
-</html>
+    </body>
+    </html>

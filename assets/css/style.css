@@ -1,17 +1,9 @@
-.rectanglebleu{
-  height: 200px; /*hauteur*/
-  width: 75%; /*largeur*/
-  background: #6f9be8;
-  float:left;
+#identityInfo {
+  background-color: #2574A9
 }
-.rectangleviolet{
-    height: 200px;
-    width: 75%;
-    background: #9752b2;
-    float:left;
+#adInfo {
+  background-color: #9A12B3
 }
-.rectanglerose{
-  height: 200px;
-  width: 75%;
-  background: #f75ded;
-  float:left;
+#paiementInfo {
+  background-color: #DB0A5B
+}
