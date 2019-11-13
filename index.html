@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <form>
-      <!--Cette partie concerne la premiere partie identité du formulaire-->
-      <fieldset id="identityInfo">
+  <form action="#" method="post">
+    <!--Cette partie concerne la premiere partie identité du formulaire-->
+    <fieldset id="identityInfo">
       <legend id="identity">Votre identité</legend>
       <ol>
         <li>
@@ -18,61 +18,69 @@
         <li>
           <label for="firstname">Prenom :</label>
           <input type="text" id="firstname" name="firstname"placeholder="Prénom"/>
-          </li>
-          <li>
-            <label for="mail">Adresse mail :</label>
-            <input type="text" id="mail" name="mail" placeholder="Adresse mail"/>
-          </li>
+        </li>
+        <li>
+          <label for="mail">Adresse mail :</label>
+          <input type="text" id="mail" name="mail" placeholder="Adresse mail"/>
+        </li>
+      </ol>
+    </fieldset>
+    <!--Cette partie concerne la seconde section partie livraison du formulaire-->
+    <fieldset id="adInfo">
+      <legend id="infolivraison">Nom de livraison</legend>
+      <ol>
+        <li>
+          <label for="adresse">Adresse :</label>
+          <textarea name="adresse" rows="4" cols="19"></textarea>
+        </li>
+        <li>
+          <label for="postal">Code postal:</label>
+          <input type="text" id="mail" name="mail" placeholder="Code postal"/>
+        </li>
+        <li>
+          <label for="country">Ville</label>
+          <input type="text" id="Ville" name="Ville" placeholder="Ville"/>
         </ol>
       </fieldset>
-      <!--Cette partie concerne la seconde section partie livraison du formulaire-->
-        <fieldset id="adInfo">
-        <legend id="infolivraison">Nom de livraison</legend>
+      <!--Cette partie concerne la troisieme partie information reglements du formulaire-->
+      <fieldset id="paiementInfo">
+        <legend id="livraison">Information de réglement</legend>
         <ol>
-          <li>
-            <label for="adresse">Adresse :</label>
-            <textarea name="adresse" rows="4" cols="19"></textarea>
-          </li>
-          <li>
-            <label for="postal">Code postal:</label>
-            <input type="text" id="mail" name="mail" placeholder="Code postal"/>
-          </li>
-          <li>
-            <label for="country">Ville</label>
-            <input type="text" id="Ville" name="Ville" placeholder="Ville"/>
-          </ol>
-        </fieldset>
-        <!--Cette partie concerne la troisieme partie information reglements du formulaire-->
-          <fieldset id="paiementInfo">
-          <legend id="livraison">Information de réglement</legend>
-          <ol>
-            <li>Type de carte bancaire :</li>
-              <div id="VISA">
-                <input type="radio" id="Ville" name="Ville" placeholder="Visa"/>
-                <label for="country">VISA</label>
-              </div>
-              <div id="Mastercard">
-                <input type="radio" id="Ville" name="Ville" placeholder="Mastercard"/>
-                <label for="country">Mastercard</label>
-              </div>
-              </li>
-            </ul>
-            <li>
-            <label for="country">Numéro de carte:</label>
-            <input type="text" id="Ville" name="Ville" placeholder="Numéro de carte"/>
-            </li>
-            <li>
-            <label for="country">Code de sécurité:</label>
-            <input type="text" id="Ville" name="Ville" placeholder="Code sécurité"/>
-            </li>
-            <li>
-            <label for="country">Nom du titulaire:</label>
-            <input type="text" id="Ville" name="Ville" placeholder="Nom du titulaire"/>
-            </li>
-          </ol>
-          </fieldset>
-                <!--Cette partie concerne la partie après les segments-->
-            <input type="button" value="J'achète !"/>
-        </form>
-    </body>
-    </html>
+          <li>Type de carte bancaire :</li>
+          <div id="VISA">
+            <input type="radio" id="Visa" name="Card" placeholder="Visa"/>
+            <label for="country">VISA</label>
+          </div>
+          <div id="Mastercard">
+            <input type="radio" id="Mastercard" name="card" placeholder="Mastercard"/>
+            <label for="country">Mastercard</label>
+          </div>
+        </li>
+      </ul>
+      <li>
+        <label for="country">Numéro de carte:</label>
+        <input type="text" id="numbercard" name="Ville" placeholder="Numéro de carte"/>
+      </li>
+      <li>
+        <label for="country">Code de sécurité:</label>
+        <input type="text" id="securite" name="Ville" placeholder="Code sécurité"/>
+      </li>
+      <li>
+        <label for="country">Nom du titulaire:</label>
+        <input type="text" id="titulaire" name="Ville" placeholder="Nom du titulaire"/>
+      </li>
+    </ol>
+  </fieldset>
+  <!--Cette partie concerne la partie après les segments-->
+  <!--Les différentes façon de faire un boutton-->
+  <input type="button" name="button" id="button" value="J'achète !"/>
+  <!--value permet d'écrire sur le bouton-->
+  <input type="submit" name="button2" id="button2" value="J'achète !"/>
+  <!--sumit permet d'envoyer le formulaire-->
+  <button type="submit">J'achète !</button>
+  <!--button submit permet d'envoyer le formulaire-->
+  <button type="button" name="button3" id="button3" value="J'achète !"></button>
+  <!--button submit permet d'envoyer le formulaire-->
+</form>
+</body>
+</html>

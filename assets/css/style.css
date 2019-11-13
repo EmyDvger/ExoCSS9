@@ -1,3 +1,4 @@
+/*changer la couleur de chaque section du formulaire*/
 #identityInfo {
   background-color: #2574A9
 }
@@ -16,3 +17,8 @@
 #livraison {
   background-color: #DB0A5B
 }
+/*determiner une taille fixe à la boite adresse*/
+textarea {
+  resize: none;
+}
+/*retirer les puces : list-style-type:none*/
